@@ -38,18 +38,14 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-
-          <!-- <li><a href="#home" class="smoothScroll">HOME</a></li> -->
-
-          <li><a href="#milks" class="smoothScroll">MILKS</a></li>
+          <li><a href="#milk" class="smoothScroll">MILK</a></li>
           <li><a href="#about" class="smoothScroll">ABOUT</a></li>
           <li><a href="#desserts" class="smoothScroll">DESSERTS</a></li>
           <li><a href="#cheese" class="smoothScroll">CHEESE</a></li>
-          <li><a href="#fermentables" class="smoothScroll">fermentables</li>
+          <li><a href="#fermentables" class="smoothScroll">FERMENTABLES</li>
             <li><a href="#contact" class="smoothScroll">CONTACT</a></li>
           </ul>
         </div>
-
       </div>
     </section>
 
@@ -60,89 +56,74 @@
       <div class="site-slider">
         <ul class="bxslider">
           <li>
-            <%= image_tag "" %>
+            <%= image_tag "slider/at-ufsc.jpg" %>
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
                   <div class="slider-caption">
                     <h2>At UFSC</h2>
-                    <p class="color-white">MissMoo participates with Cooperativa Vegana at the UFSC farmers' market.</p>
+                    <p>MissMoo participates with Cooperativa Vegana at the UFSC farmers' market.</p>
                   </div>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <%= image_tag "slider/slide2.jpg" %>
+            <%= image_tag "slider/production.jpg" %>
             <div class="container caption-wrapper">
               <div class="slider-caption">
                 <h2>Production</h2>
-                <p class="color-white">Preparing for the farmers' market</p>
+                <p>Preparing for the farmers' market</p>
               </div>
             </div>
           </li>
           <li>
-            <%= image_tag "slider/slide3.jpg" %>
+            <%= image_tag "slider/plant-based-milk.jpg" %>
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
                   <div class="slider-caption">
                     <h2>Plant-based Milk</h2>
-                    <p class="color-white">Here's a look at some of MissMoo's plant-based milk.</p>
+                    <p>Here's a look at some of MissMoo's plant-based milk.</p>
                   </div>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <%= image_tag "slider/happycows.jpg" %>
+            <%= image_tag "slider/calf-drinking-milk.jpg" %>
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
                   <div class="slider-caption">
                     <h2>Happy cow</h2>
-                    <p class="color-white">Unlike disengenuous marketing campaigns, cows really do benefit from our switch to plant-based milk.</p>
+                    <p>Unlike disengenuous marketing campaigns, cows really do benefit from our switch to plant-based milk.</p>
                   </div>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <%= image_tag "slider/slide5.jpg" %>
+            <%= image_tag "slider/calf.jpg" %>
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
                   <div class="slider-caption">
                     <h2>Contact us today</h2>
-                    <p class="color-white">Please click on this <a href="#contact">link</a> to contact us</p>
+                    <p>Please click on this <%= link_to "link", root_path, class: "smoothScroll" %> to contact us</p>
                   </div>
                 </div>
               </div>
             </div>
           </li>
-        </ul> <!-- /.bxslider -->
-        <div class="bx-thumbnail-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div id="bx-pager">
-                  <a data-slide-index="0" href=""><%= image_tag "slider/thumb1.jpg" %></a>
-                  <a data-slide-index="1" href=""><%= image_tag "slider/thumb2.jpg" %> </a>
-                  <a data-slide-index="2" href=""><%= image_tag "slider/thumb3.jpg" %></a>
-                  <a data-slide-index="3" href=""><%= image_tag "slider/thumb4.jpg" %></a>
-                  <a data-slide-index="4" href=""><%= image_tag "slider/thumb5.jpg" %></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- /.site-slider -->
+        </ul>
+      </div>
     </div>
 
 
-    <!-- Work section
+    <!-- Milk section
     ================================================== -->
-    <section id="milks" class="parallax-section">
+    <section id="milk" class="parallax-section">
       <div class="container">
         <div class="row">
 
@@ -150,8 +131,8 @@
           ================================================== -->
           <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
             <div class="section-title">
-              <h5 class="wow bounceIn color-yellow">Plant-based</h5>
-              <h1 class="heading">MILKS</h1>
+              <h4 class="wow bounceIn color-green">Plant-based</h4>
+              <h1 class="heading">MILK</h1>
               <hr>
               <p>We have 6 varieties of plant-based milk to offer, meaning you can find one for everyone.</p>
             </div>
@@ -167,20 +148,20 @@
 
               <!-- Section title
               ================================================== -->
-              <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+              <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 color-black">
                 <div class="section-title">
-                  <h5 class="wow bounceIn color-yellow">WHO ARE WE</h5>
-                  <h1 class="heading color-green">VEGANS</h1>
+                  <h4 class="wow bounceIn">WHO ARE WE</h4>
+                  <h1 class="heading">VEGANS</h1>
                   <hr>
-                  <p class="color-green">Who want to share our passion with you!</p>
+                  <p>Who want to share our passion with you!</p>
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-12">
-                <h3 class="color-green">OUR STORY</h3>
-                <h2 class="color-green">MissMoo Plant-based Milks</h2>
-                <p class="color-green">Actually started as MissMoo leites vegetais(Portuguese) in 2016.</p>
-                <p class="color-green">Since then we've had some changes and growth, but we still love helping spread veganism with yummy food and beverages.</p>
+              <div class="col-md-6 col-sm-12 color-black">
+                <h3>OUR STORY</h3>
+                <h2>MissMoo Plant-based milk</h2>
+                <p>Actually started as MissMoo leites vegetais(Portuguese) in 2016.</p>
+                <p>Since then we've had some changes and growth, but we still love helping spread veganism with yummy food and beverages.</p>
               </div>
 
               <div class="col-md-6 col-sm-12">
@@ -235,31 +216,31 @@
               </div>
 
               <div class="col-md-12">
-                <h3 class="wow bounceIn color-yellow text-center">Per day, as a vegan, you save:</h3>
+                <h3 class="wow bounceIn color-green text-center">Per day, as a vegan, you save:</h3>
               </div>
 
               <div class="col-md-3 col-sm-3 col-xs-6">
-                <div class="about-fact border-right">
+                <div class="about-fact border-right color-green">
                   <span>1100</span>
                   <h4>GALLONS OF WATER</h4>
                 </div>
               </div>
 
-              <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="col-md-3 col-sm-3 col-xs-6 color-green">
                 <div class="about-fact border-right">
                   <span>30</span>
                   <h4>SQ. FT FOREST</h4>
                 </div>
               </div>
 
-              <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="col-md-3 col-sm-3 col-xs-6 color-green">
                 <div class="about-fact border-right">
                   <span>40</span>
                   <h4>LBS. GRAIN</h4>
                 </div>
               </div>
 
-              <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="col-md-3 col-sm-3 col-xs-6 color-green">
                 <div class="about-fact">
                   <span>1</span>
                   <h4>ANIMALS' LIFE</h4>
@@ -280,7 +261,7 @@
               ================================================== -->
               <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
                 <div class="section-title">
-                  <h5 class="wow bounceIn color-yellow">VEGAN</h5>
+                  <h4 class="wow bounceIn color-green">VEGAN</h4>
                   <h1 class="heading">DESSERTS</h1>
                   <hr>
                   <p>For all the sweet toothes out there, we make vegan desserts with no refined sugar or flour and 100% cacau.</p>
@@ -292,7 +273,7 @@
                   <%= image_tag('whole-wheat-cinnamon-rolls.jpg', class: 'img-responsive') %>
                   <div class="desserts-des">
                     <h4>Cinnamon Rolls</h4>
-                    <h3>Make this yummy recipe</h3>
+                    <h3 class="color-green">Make this yummy recipe</h3>
                     <ul class="social-icon">
                       <li><a href="https://www.facebook.com/missmooleitesvegetais/" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
                       <li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6"></a></li>
@@ -303,10 +284,10 @@
 
               <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
                 <div class="dessert-wrapper">
-                  <%= image_tag('avocado-cheesecake-vegan-cheesecake.png', class: 'img-responsive') %>
+                  <%= image_tag('cajucake.jpg', class: 'img-responsive') %>
                   <div class="desserts-des">
                     <h4>Vegan Cheesecake(Cashews)</h4>
-                    <h3>Click below, it's raw!</h3>
+                    <h3 class="color-green">Click below, it's raw!</h3>
                     <ul class="social-icon">
                       <li><a href="https://www.facebook.com/missmooleitesvegetais/" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
                       <li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6"></a></li>
@@ -320,7 +301,7 @@
                   <%= image_tag('peanut-butter-cookies.jpg', class: 'img-responsive') %>
                   <div class="desserts-des">
                     <h4>Peanut Butter cookies</h4>
-                    <h3>With homemade peanut butter<a href="#" class="em em-yum pull-right"></a> </h3>
+                    <h3 class="color-green">With homemade peanut butter<a href="#" class="em em-yum pull-right"></a> </h3>
                     <ul class="social-icon">
                       <li><a href="https://www.facebook.com/missmooleitesvegetais/" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
                       <li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6"></a></li>
@@ -328,8 +309,137 @@
                   </div>
                 </div>
               </div>
+            </section>
 
-              <section id="cheese" class="parallax-section">
+            <section id="cheese" class="parallax-section">
+              <div class="container">
+                <div class="row">
+
+                  <!-- Section title
+                  ================================================== -->
+                  <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+                    <div class="section-title">
+                      <h4 class="wow bounceIn color-green">VEGAN</h4>
+                      <h1 class="heading">ARTESANAL CHEESES</h1>
+                      <hr>
+                      <p>Cheese can be made from plant-based ingredients as well. You can enjoy cannelloni or nachos
+                        without animal exploitation and using far fewer natural resources.</p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="grid">
+                        <figure class="effect-zoe">
+                          <%= image_tag 'raw-nut-cheese.jpg' %>
+                          <figcaption>
+                            <h2>Almond Ricotta</h2>
+                            <p class="icon-links">
+                              <%= link_to root_path do %>
+                              <i class="fa fa-link pull-right"></i>
+                              <% end %>
+                            </p>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="grid">
+                        <figure class="effect-zoe">
+                          <%= image_tag 'shanklish.jpg' %>
+                          <figcaption>
+                            <h2>Shanklish</h2>
+                            <p class="icon-links">
+                              <%= link_to root_path do %>
+                              <i class="fa fa-link pull-right"></i>
+                              <% end %>
+                            </p>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="grid">
+                        <figure class="effect-zoe">
+                          <%= image_tag 'vegan-nacho-cheese.jpg' %>
+                          <figcaption>
+                            <h2>Nacho cheese</h2>
+                            <p class="icon-links">
+                              <%= link_to root_path do %>
+                              <i class="fa fa-link pull-right"></i>
+                              <% end %>
+                            </p>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section id="fermentables" class="parallax-section">
+              <div class="container">
+                <div class="row">
+
+                  <!-- Section title
+                  ================================================== -->
+                  <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
+                    <div class="section-title">
+                      <h4 class="wow bounceIn color-white">Fermentables</h4>
+                      <h1 class="heading color-white">Yogurt and more cheese!!</h1>
+                      <hr>
+                      <p class="color-green">You can ferment your milk or pulp, make some yummy plant-based milk derivatives,
+                        and up your consumption of healthy gut floral.</p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-8 wow fadeInUp" data-wow-delay="0.3s">
+                      <div class="fermentables">
+                        <h2 class="fermentables-title">Berry Yogurt</h2>
+                        <div class="fermentables-price">
+                          <h3 class="fermentables-price-title color-green">Ingredients:</h3>
+                        </div>
+                        <ul class="yogurts-list">
+                          <li>Plant-based milk</li>
+                          <li>Probiotic starter(<%= link_to 'water kefir', root_path %>,<%= link_to 'rejuvelac', root_path %>, <%= link_to 'kombucha', root_path %>)</li>
+                          <li>Your favorite berry</li>
+                          <li>Lime</li>
+                        </ul>
+                        <div class="fermentables-button">
+                          <%= link_to "RECIPE", root_path, class: "btn btn-default" %>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-8 wow fadeInUp" data-wow-delay="0.6s">
+                      <div class="fermentables">
+                        <h2 class="fermentables-title">Nut cheese</h2>
+                        <div class="fermentables-price">
+                          <h3 class="fermentables-price-title color-green">Ingredients:</h3>
+                        </div>
+                        <ul class="fermentables-list">
+                          <li>Your favorite nut</li>
+                          <li>Probiotic starter</li>
+                          <li>Olive Oil</li>
+                          <li>Lime</li>
+                          <li>Spices</li>
+                        </ul>
+                        <div class="fermentables-button">
+                          <%= link_to "TRY IT", root_path, class: "btn btn-default" %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+              <!-- Contact section
+              ================================================== -->
+              <section id="contact" class="parallax-section">
                 <div class="container">
                   <div class="row">
 
@@ -337,200 +447,77 @@
                     ================================================== -->
                     <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
                       <div class="section-title">
-                        <h5 class="wow bounceIn">VEGAN</h5>
-                        <h1 class="heading">ARTESANAL CHEESES</h1>
+                        <h4 class="wow bounceIn color-green">Learn more, collaborate, order</h4>
+                        <h1 class="heading">CONTACT US</h1>
                         <hr>
-                        <p>Cheese can be made from plant-based ingredients as well. You can enjoy cannelloni or nachos
-                          without animal exploitation and using far fewer natural resources.</p>
-                        </div>
+                        <p>We're always keen to help you in your transition to veganism or adopting a more plant-based diet. Just sends us a message if you wanna connect.
+                          Also, if you'd like to help out, or order some of our products, we'd love to hear from you.
+                        </p>
                       </div>
+                    </div>
 
-                      <div class="col-md-4 col-sm-6">
-                        <div class="grid">
-                          <figure class="effect-zoe">
-                            <%= image_tag 'cannelloni.jpg' %>
-                            <figcaption>
-                              <h2>Almond Ricotta</h2>
-                              <p class="icon-links">
-                                <%= link_to root_path do %>
-                                <i class="fa fa-link pull-right"></i>
-                                <% end %>
-                              </p>
-                            </figcaption>
-                          </figure>
+                    <!-- Contact form section
+                    ================================================== -->
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                      <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="col-md-4 col-sm-6">
+                          <input type="text" class="form-control" placeholder="Name" name="name">
                         </div>
-                      </div>
+                        <div class="col-md-4 col-sm-6">
+                          <input type="email" class="form-control" placeholder="Email" name="email">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                          <input type="text" class="form-control" placeholder="Subject" name="subject">
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                          <textarea class="form-control" placeholder="Message" rows="7" name"message"></textarea>
+                        </div>
+                        <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+                          <input type="submit" class="form-control" value="SHOOT MESSAGE">
+                        </div>
+                      </form>
+                    </div>
 
-                      <div class="col-md-4 col-sm-6">
-                        <div class="grid">
-                          <figure class="effect-zoe">
-                            <%= image_tag 'shanklish.jpg' %>
-                            <figcaption>
-                              <h2>Shanklish</h2>
-                              <p class="icon-links">
-                                <%= link_to root_path do %>
-                                <i class="fa fa-link pull-right"></i>
-                                <% end %>
-                              </p>
-                            </figcaption>
-                          </figure>
-                        </div>
+                    <!-- Contact detail section
+                    ================================================== -->
+                    <div class="contact-detail col-md-12 col-sm-12">
+                      <div class="col-md-6 col-sm-6">
+                        <h3><i class="icon-envelope medium-icon wowbounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
+                        <p class="color-green">missmoo-plant-based@gmail.com</p>
                       </div>
+                      <div class="col-md-6 col-sm-6">
+                        <h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>
+                        <p class="color-green">48 99630 6164 | 48 99984 3216</p>
+                      </div>
+                    </div>
 
-                      <div class="col-md-4 col-sm-6">
-                        <div class="grid">
-                          <figure class="effect-zoe">
-                            <%= image_tag 'vegan-nacho-cheese.jpg' %>
-                            <figcaption>
-                              <h2>Nacho cheese</h2>
-                              <p class="icon-links">
-                                <%= link_to root_path do %>
-                                <i class="fa fa-link pull-right"></i>
-                                <% end %>
-                              </p>
-                            </figcaption>
-                          </figure>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Footer section
+              ================================================== -->
+              <footer>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+
+                      <h2 class="wow bounceIn">MissMoo Plant-based Milk</h2>
+                      <ul class="social-icon">
+                        <li>
+                          <%= link_to "https://facebook.com/missmooleitesvegetais", target: "_blank" do %>
+                            <i href="#" class="fa fa-facebook wowfadeIn" data-wow-delay="0.3s"></i>
+                          <% end %>
+                        </li>
+                        <li>
+                          <%= link_to "https://instagram.com/missmooleitesvegetais", target: "_blank" do %>
+                            <i href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></i>
+                          <% end %>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </section>
-
-                <section id="fermentables" class="parallax-section">
-                  <div class="container">
-                    <div class="row">
-
-                      <!-- Section title
-                      ================================================== -->
-                      <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
-                        <div class="section-title">
-                          <h5 class="wow bounceIn color-yellow">Fermentables</h5>
-                          <h1 class="heading color-white">Yogurt and more cheese!!</h1>
-                          <hr>
-                          <p class="color-white">You can ferment your milk or pulp, make some yummy plant-based milk derivatives,
-                            and up your consumption of healthy gut floral.</p>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-8 wow fadeInUp" data-wow-delay="0.3s">
-                          <div class="fermentables">
-                            <h2 class="fermentables-title">Berry Yogurt</h2>
-                            <div class="fermentables-price">
-                              <h3 class="fermentables-price-title color-yellow">Ingredients:</h3>
-                            </div>
-                            <ul class="yogurts-list">
-                              <li>Plant-based milk</li>
-                              <li>Probiotic starter(<%= link_to 'water kefir', root_path %>,<%= link_to 'rejuvelac', root_path %>, <%= link_to 'kombucha', root_path %>)</li>
-                              <li>Your favorite berry</li>
-                              <li>Lime</li>
-                            </ul>
-                            <div class="fermentables-button">
-                              <%= link_to "RECIPE", root_path, class: "btn btn-default" %>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-8 wow fadeInUp" data-wow-delay="0.6s">
-                          <div class="fermentables">
-                            <h2 class="fermentables-title">Nut cheese</h2>
-                            <div class="fermentables-price">
-                              <h3 class="fermentables-price-title color-yellow">Ingredients:</h3>
-                            </div>
-                            <ul class="fermentables-list">
-                              <li>Your favorite nut</li>
-                              <li>Probiotic starter</li>
-                              <li>Olive Oil</li>
-                              <li>Lime</li>
-                              <li>Spices</li>
-                            </ul>
-                            <div class="fermentables-button">
-                              <%= link_to "TRY IT", root_path, class: "btn btn-default" %>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-
-
-                  <!-- Contact section
-                  ================================================== -->
-                  <section id="contact" class="parallax-section">
-                    <div class="container">
-                      <div class="row">
-
-                        <!-- Section title
-                        ================================================== -->
-                        <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-                          <div class="section-title">
-                            <h5 class="wow bounceIn color-yellow">Learn more, collaborate, order</h5>
-                            <h1 class="heading">CONTACT US</h1>
-                            <hr>
-                            <p>We're always keen to help you in your transition to veganism or adopting
-                              a more plant-based diet. Just sends us a message if you wanna connect. Also,
-                              if you'd like to help out, or order some of our products, we'd love to hear
-                              from you.
-                            </p>
-                          </div>
-                        </div>
-
-                        <!-- Contact form section
-                        ================================================== -->
-                        <div class="col-md-offset-1 col-md-10 col-sm-12">
-                          <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="col-md-4 col-sm-6">
-                              <input type="text" class="form-control" placeholder="Name" name="name">
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                              <input type="email" class="form-control" placeholder="Email" name="email">
-                            </div>
-                            <div class="col-md-4 col-sm-12">
-                              <input type="text" class="form-control" placeholder="Subject" name="subject">
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                              <textarea class="form-control" placeholder="Message" rows="7" name"message"></textarea>
-                            </div>
-                            <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-                              <input type="submit" class="form-control" value="SHOOT MESSAGE">
-                            </div>
-                          </form>
-                        </div>
-
-                        <!-- Contact detail section
-                        ================================================== -->
-                        <div class="contact-detail col-md-12 col-sm-12">
-                          <div class="col-md-6 col-sm-6">
-                            <h3><i class="icon-envelope medium-icon wowbounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
-                            <p>missmoo-plant-based@gmail.com</p>
-                          </div>
-                          <div class="col-md-6 col-sm-6">
-                            <h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>
-                            <p>48 99630 6164 | 48 99984 3216</p>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </section> -->
-
-                  <!-- Footer section
-                  ================================================== -->
-                  <footer>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-12 col-sm-12">
-
-                          <h2 class="wow bounceIn">MissMoo Plant-based Milk</h2>
-                          <ul class="social-icon">
-                            <li><a href="#" class="fa fa-facebook wowfadeIn" data-wow-delay="0.3s"></a></li>
-                            <li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </footer>
-
-
-
-                </body>
-                </html>
+                </div>
+              </footer>
+            </body>
+            </html>

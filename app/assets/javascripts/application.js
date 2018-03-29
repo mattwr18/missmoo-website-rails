@@ -15,6 +15,5 @@
 //= require bxslider
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require lightbox-bootstrap
 //= require wow
 //= require_tree .

@@ -30,8 +30,8 @@ img {
 
 /* Typography
 ------------------------------------- */
-h1,h2,h3,h4,h5 {
-  font-family: 'Raleway', sans-serif;
+h1,h2,h3,h4 {
+  font-family: 'Raleway', sans-serif !important;
   font-weight: bold;
 }
 
@@ -40,10 +40,14 @@ h3 {
   letter-spacing: 1px;
 }
 
-h5 {
+h4 {
   color: #ffa400;
   letter-spacing: 4px;
   padding-top: 22px;
+}
+
+#home p {
+  color: #ffffff;
 }
 
 .heading {
@@ -73,8 +77,16 @@ hr {
   color: #FC3;
 }
 
+.color-black {
+  color: black;
+}
+
+.color-black p {
+  color: black;
+}
+
 .color-green  {
-  color: #67efd6;
+  color: #00ffd8;
 }
 
 .color-yellow {
@@ -118,7 +130,7 @@ hr {
   font-weight: bold;
 }
 
-#milks, #about, #desserts,
+#milk, #about, #desserts,
 #cheese, #fermentables, #contact {
 	padding-top: 120px;
 	padding-bottom: 100px;
@@ -204,13 +216,10 @@ hr {
     color: #fff;
 }
 
-.custom-navbar .nav li {
-
-}
-
 .custom-navbar .nav li a {
 	display: block;
-	padding: 15px 20px;
+  margin-top: 10px;
+	padding: 0 20px;
     color: #ffffff;
     font-size: 12px;
     font-weight: 400;
@@ -279,10 +288,17 @@ hr {
 .bx-wrapper img {
   opacity: 0.8;
   filter: alpha(opacity=80);
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 .bx-wrapper {
   background-color: #000000;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  *zoom: 1;
 }
 
 .bx-thumbnail-wrapper {
@@ -290,6 +306,12 @@ hr {
   text-align: center;
   margin-top: -1px;
   position: relative;
+}
+
+.bx-wrapper {
+}
+
+.bx-wrapper img {
 }
 
 .caption-wrapper {
@@ -317,24 +339,6 @@ hr {
 	font-size: 26px;
 }
 
-#bx-pager a {
-  margin: 20px 10px 0 20px;
-  padding: 0 0 40px 0;
-  display: inline-block;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-  outline: 0;
-  border: 0;
-}
-#bx-pager a.active {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-#bx-pager a img {
-  outline: 0;
-  border: 0;
-}
-
 .bx-controls {
   position: relative;
 }
@@ -349,7 +353,7 @@ hr {
 .bx-controls-direction a {
   width: 40px;
   height: 40px;
-  background-color: #ffa400;
+  background-color: #00ffd8;
   text-decoration: none;
   display: block;
   float: left;
@@ -363,7 +367,7 @@ hr {
 
 /* work section styles
 /* ========================================== */
-#milks .col-md-4 {
+#milk .col-md-4 {
   display: block;
   width: 100%;
   border: 4px solid transparent;
@@ -371,15 +375,15 @@ hr {
   transition: all 0.4s linear;
 }
 
-#milks .col-md-4:hover {
+#milk .col-md-4:hover {
   border: 4px solid #000000;
 }
 
-#milks h3 {
+#milk h3 {
   font-size: 16px;
 }
 
-#milks .col-md-4 hr {
+#milk .col-md-4 hr {
   margin-left: 0;
 }
 
@@ -387,7 +391,7 @@ hr {
 /* about section styles
 /* ========================================== */
 #about {
-  background-image: image-url('milk.jpg');
+  background-image: image-url('nuts-seeds.jpg');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -435,7 +439,6 @@ hr {
 }
 
 #desserts h3 {
-  color: #ffa400;
   font-size: 14px;
   font-weight: bold;
 }
@@ -621,7 +624,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 #fermentables .fermentables:hover {
   background: #000000;
-  border-color: #ffa400;
+  border-color: #00ffd8;
 }
 
 #fermentables .fermentables-title {
@@ -655,7 +658,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 #fermentables .fermentables-button .btn:hover {
   background: #ffffff;
-  color: #ffa400;
+  color: #00ffd8;
   border-color: transparent;
 }
 
@@ -713,6 +716,10 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 #contact .contact-detail .col-md-6:first-child {
   border-right: 4px solid #000000;
+}
+
+#contact .contact-detail p {
+  font-size: 20px;
 }
 
 
@@ -824,10 +831,10 @@ footer h2 {
   #about .mobile-top {
     padding-top: 32px;
   }
-  #milks .col-md-4 {
+  #milk .col-md-4 {
     text-align: center;
   }
-  #milks .col-md-4 hr {
+  #milk .col-md-4 hr {
     margin-left: auto;
   }
   .grid figure img {
@@ -878,7 +885,7 @@ footer h2 {
   .heading {
     font-size: 32px;
   }
-  h5 {
+  h4 {
     font-size: 11px;
   }
 }
